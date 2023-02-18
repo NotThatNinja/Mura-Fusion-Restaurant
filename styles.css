@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font: 1.2rem 'Noto Serif';
+}
+
+.hero-image {
+    position: relative;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./imgs/hero-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+.hero-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 17.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero-button a {
+    padding: 0.6rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    color: black;
+    font-family: Inter;
+}
+
+.logo {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
