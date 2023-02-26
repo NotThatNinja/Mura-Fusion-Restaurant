@@ -12,22 +12,21 @@ nav {
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
 }
 
 /* -- Hero -- */
 .hero-background {
     position: absolute;
-    top: calc(73.225px + 2rem);
+    top: calc(55.913px + 2rem);
     left: 0;
     width: 100vw;
-    height: calc(100vh - 73.225px - 2rem);
-    background-image: linear-gradient(118deg, #8F7600 50%, black 50%);
+    height: calc(100vh - 55.913px - 2rem);
+    background-image: linear-gradient(123deg, #8F7600 50%, black 50%);
 }
 
 .hero-text {
     position: relative;
-    margin: 0.75rem;
     text-align: center;
 }
 .hero-text div {
@@ -36,7 +35,7 @@ nav {
 }
 .hero-text div h1 {
     margin: 0;
-    font-size: 4.313rem;
+    font-size: 3.3rem;
     line-height: 1.5;
     color: white;
 }
