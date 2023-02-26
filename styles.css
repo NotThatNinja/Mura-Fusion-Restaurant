@@ -32,7 +32,7 @@ nav {
     position: absolute;
     width: 163px;
     right: 0;
-    bottom: 5rem;
+    bottom: 4rem;
 }
 
 .hero-text {
@@ -61,7 +61,7 @@ nav {
     bottom: 0;
     transform: translateX(-50%);
     width: calc(100%);
-    max-width: 250px;
+    max-width: 275px;
 }
 
 .featured-item {
