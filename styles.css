@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #8F7600;
+    background-image: linear-gradient(to top left, black 50%, #8F7600 50%);
+    background-repeat: no-repeat;
+    background-size: 100vw calc(100vh - 55.913px - 2rem);
+    background-position: 0 calc(55.913px + 2rem);
     font: bold 1rem Montserrat;
 }
 
@@ -16,17 +20,23 @@ nav {
 }
 
 /* -- Hero -- */
-.hero-background {
+.hero-image-1 {
     position: absolute;
-    top: calc(55.913px + 2rem);
-    left: 0;
-    width: 100vw;
-    height: calc(100vh - 55.913px - 2rem);
-    background-image: linear-gradient(123deg, #8F7600 50%, black 50%);
+    width: 200px;
+    left: -2.5rem;
+    top: 11rem;
+}
+
+.hero-image-2 {
+    z-index: -1;
+    position: absolute;
+    width: 163px;
+    right: 0;
+    bottom: 5rem;
 }
 
 .hero-text {
-    position: relative;
+    margin-top: 0.1rem;
     text-align: center;
 }
 .hero-text div {
@@ -35,8 +45,8 @@ nav {
 }
 .hero-text div h1 {
     margin: 0;
-    font-size: 3.3rem;
-    line-height: 1.5;
+    font-size: 4rem;
+    line-height: 1.4;
     color: white;
 }
 .hero-text div h1 i {
@@ -47,17 +57,21 @@ nav {
 /* -- Featured -- */
 .featured {
     position: absolute;
+    left: 50%;
     bottom: 0;
-    width: calc(100% - 2rem - 2px);
+    transform: translateX(-50%);
+    width: calc(100%);
+    max-width: 250px;
 }
 
 .featured-item {
     width: 100%;
-    margin: 1rem;
+    margin: 1rem 0;
     background: white;
     border: solid 1px #707070;
     border-radius: 1rem;
 }
 .featured-item p {
     text-align: center;
+    font-size: 0.75rem;
 }
