@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Il ristorante giapponese Mura accoglie i suoi ospiti in uno spazio ricco di memoria e di magia nel quale oriente ed occidente si fondono">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,b">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./styles.css">
 
         <!-- Icons -->
@@ -29,13 +29,31 @@
         <!-- Nav -->
         <nav>
             <img class="logo" src="imgs/logo.png" alt="Logo">
+            <div class="nav-icon" onclick="toggleNav()" id="nav-icon">
+                <div class="nav-icon-bar1"></div>
+                <div class="nav-icon-bar2"></div>
+                <div class="nav-icon-bar3"></div>
+            </div>
+
+            <!-- Nav links -->
+            <div class="nav-links" id="nav-links-mobile">
+                <ul>
+                    <li><a onclick="slideTo('home')">Home</a></li>
+                    <li><a onclick="slideTo('about-us')">La nostra storia</a></li>
+                    <li><a onclick="slideTo('dishes-menu')">Menù</a></li>
+                    <li><a onclick="slideTo('info')">Informazioni</a></li>
+                    <li><a onclick="slideTo('map')">Mappa</a></li>
+                    <li><a onclick="slideTo('events')">Eventi</a></li>
+                    <li><a onclick="slideTo('contacts')">Contatti</a></li>
+                </ul>
+            </div>
         </nav>
 
         <!-- Hero -->
         <img class="hero-image-1" src="imgs/sushi-1.png" alt="Sushi">
         <img class="hero-image-2" src="imgs/sushi-2.png" alt="Sushi">
         
-        <div class="hero-text">
+        <div class="hero-text" id="home">
             <div class="hero-text">
                 <h1>
                     <i>A</i>LL<br>
@@ -71,7 +89,7 @@
         <!-- Content -->
         <div class="content">
             <!-- About us -->
-            <div class="about-us">
+            <div class="about-us" id="about-us">
                 <h2>LA NOSTRA STORIA</h2>
                 <p>
                     Il ristorante giapponese Mura si trova in una vecchia
@@ -90,7 +108,7 @@
             </div>
 
             <!-- Dishes menu -->
-            <div class="dishes-menu">
+            <div class="dishes-menu" id="dishes-menu">
                 <h2>MENÙ</h2>
                 <div class="dishes-menu-link">
                     <p>MENÙ PRANZO</p>
@@ -127,7 +145,7 @@
             </div>
 
             <!-- Info -->
-            <div class="info">
+            <div class="info" id="info">
                 <h2>INFORMAZIONI</h2>
                 <div class="info-div">
                     <img class="info-icon" src="imgs/whatsapp-icon.png" alt="Icona di Whatsapp">
@@ -151,5 +169,48 @@
                     </p>
                 </div>
             </div>
+
+            <!-- Map -->
+            <div class="map" id="map">
+                <h2>DOVE SIAMO?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2714850012467!2d9.04775241540847!3d45.524742079101706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786eb17b8a49edb%3A0x47895ef4a388fa73!2sMura%20Fusion%20Restaurant!5e0!3m2!1sen!2sit!4v1677529076493!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Corso Europa, 85, 20017 Rho MI</p>
+            </div>
+
+            <!-- Events -->
+            <div class="events" id="events">
+                <h2>EVENTI</h2>
+                <p>
+                    Non ci sono eventi in programma al momento<br>
+                    Torna a visitarci presto!
+                </p>
+            </div>
+
+            <!-- Footer -->
+            <footer id="contacts">
+                <div class="footer-logo">
+                    <img src="imgs/logo.png" alt="Logo">
+                </div>
+                <p>Tutti i diritti sono riservati, per maggiori informazioni consulta la Privacy Policy e le note legali.<br>p. iva 07392740960</p>
+                <div class="socialbar">
+                    <a href="#" class="fa fa-facebook-square"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </footer>
+        
+        <script>
+            function toggleNav() {
+                let navlinks = document.getElementById('nav-links-mobile');
+                navlinks.style.display = navlinks.style.display == 'block' ? 'none' : 'block';
+                document.getElementById('nav-icon').classList.toggle('change');
+            }
+
+            function slideTo(location) {
+                let element = document.getElementById(location);
+                const y = element.getBoundingClientRect().top + window.pageYOffset -100;
+                window.scrollTo({top: y, behavior: 'smooth'});
+                toggleNav();
+            }
+        </script>
     </body>
 </html>

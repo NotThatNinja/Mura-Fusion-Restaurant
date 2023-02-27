@@ -13,8 +13,67 @@ img {max-width: 100%;}
 
 /* -- Nav -- */
 nav {
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
     padding: 1rem;
     background-color: black;
+    z-index: 10;
+}
+
+.nav-icon {
+    display: inline-block;
+    position: absolute;
+    right: 3.5rem;
+    top: 21px;
+    cursor: pointer;
+    background-color: #8F7600;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+}
+.nav-links ul {
+    list-style: none;
+    padding: 0.25rem 0.5rem;
+}
+.nav-links li {
+    margin: 0.75rem;
+    cursor: pointer;
+}
+.nav-links ul li a {
+    color: #8F7600;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-icon-bar1, .nav-icon-bar2, .nav-icon-bar3 {
+    width: 35px;
+    height: 4px;
+    border-radius: 1rem;
+    background: black;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.change .nav-icon-bar1 {
+    transform: translate(0, 9px) rotate(-45deg);
+}
+
+.change .nav-icon-bar2 {
+    opacity: 0;
+}
+
+.change .nav-icon-bar3 {
+    transform: translate(0, -7px) rotate(45deg);
 }
 
 .logo {width: 150px;}
@@ -36,7 +95,7 @@ nav {
 }
 
 .hero-text {
-    margin-top: 0.1rem;
+    margin-top: 45px;
     text-align: center;
 }
 .hero-text div {
@@ -61,7 +120,7 @@ nav {
     bottom: 0;
     transform: translateX(-50%);
     width: calc(100%);
-    max-width: 275px;
+    max-width: 300px;
 }
 
 .featured-item {
@@ -73,7 +132,7 @@ nav {
 }
 .featured-item p {
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
 }
 
 /* -- Content -- */
@@ -143,4 +202,62 @@ nav {
 
 .info-icon {
     width: 60px;
+}
+
+/* -- Map -- */
+.map {
+    text-align: center;
+}
+.map h2 {
+    color: white;
+}
+.map iframe {
+    width: 90%;
+    height: 250px;
+}
+.map p {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 5rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+/* -- Events -- */
+.events h2 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.events p {
+    padding: 0 1rem;
+    color: white;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+/* -- Footer -- */
+.footer-logo {
+    background-color: black;
+    padding: 1rem 5rem;
+}
+
+footer p {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+.fa {
+    color: black;
+    font-size: 3.5rem;
+    text-decoration: none;
+    margin: 0 0.5rem 1rem;
+}
+
+.socialbar {
+    text-align: center;
 }
