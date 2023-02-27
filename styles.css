@@ -9,15 +9,15 @@ body {
     font: bold 1rem Montserrat;
 }
 
+img {max-width: 100%;}
+
 /* -- Nav -- */
 nav {
     padding: 1rem;
     background-color: black;
 }
 
-.logo {
-    width: 150px;
-}
+.logo {width: 150px;}
 
 /* -- Hero -- */
 .hero-image-1 {
@@ -74,4 +74,52 @@ nav {
 .featured-item p {
     text-align: center;
     font-size: 0.75rem;
+}
+
+/* -- Content -- */
+.content {
+    position: absolute;
+    top: 100vh;
+}
+
+/* -- About us -- */
+.about-us {
+    padding: 0 1rem;
+    text-align: center;
+}
+.about-us h2, .about-us p {color: white;}
+.about-us {font-weight: normal;}
+
+/* -- Dishes menu -- */
+.dishes-menu {
+    padding: 1rem 2rem;
+    background-color: black;
+    text-align: center;
+}
+.dishes-menu h2 {
+    margin: 0;
+    color: white;
+}
+
+.dishes-menu-link {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    border: 2px solid white;
+    margin: 1rem;
+    text-align: left;
+    padding: 0 0.5rem;
+    background-color: #8F7600;
+    color: white;
+}
+.dishes-menu-link p {
+    display: inline-block;
+}
+.dishes-menu-link a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    font-weight: normal;
 }
