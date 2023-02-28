@@ -261,3 +261,31 @@ footer p {
 .socialbar {
     text-align: center;
 }
+
+/* -- Why us -- */
+.why-us {
+    text-align: center;
+}
+
+.why-us h2 {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+.why-us ul {
+    background-color: black;
+    color: white;
+    list-style: none;
+    text-align: left;
+    padding: 0.5rem 1rem 1rem;
+}
+.why-us ul li {font-weight: normal;}
+.why-us ul li::before {
+    content: '☑';
+    color: #8F7600;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 2rem;
+}
