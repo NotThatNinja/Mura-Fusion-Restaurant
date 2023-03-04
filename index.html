@@ -26,6 +26,10 @@
         <meta property="og:description" content="Il ristorante giapponese Mura accoglie i suoi ospiti in uno spazio ricco di memoria e di magia nel quale oriente ed occidente si fondono.">
     </head>
     <body>
+        <a href="https://whatsapp.com" class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+
         <!-- Nav -->
         <nav>
             <img class="logo" src="imgs/logo.png" alt="Logo">
@@ -88,25 +92,6 @@
 
         <!-- Content -->
         <div class="content">
-            <!-- About us -->
-            <div class="about-us" id="about-us">
-                <h2>LA NOSTRA STORIA</h2>
-                <p>
-                    Il ristorante giapponese Mura si trova in una vecchia
-                    palazzina liberty, in uno spazio ricco di memoria 
-                    nel quale oriente ed occidente si fondono.
-                    Il locale dispone di tre sale, ognuna delle quali 
-                    rappresenta un elemento della natura.
-                    <br><br>
-                    Mura serve piatti orientali reinterpretati in chiave
-                    moderna da chef e maestri del sushi selezionati, 
-                    utilizzando materie prime di qualità.
-                    Tra i piatti del menù si trovano il Mura fruit,
-                    i Ravioli Shao Mai, il Sashimi Speciale e i Ramen.
-                </p>
-                <img src="imgs/about-us.png" alt="La nostra storia">
-            </div>
-
             <!-- Dishes menu -->
             <div class="dishes-menu" id="dishes-menu">
                 <h2>I NOSTRI MENÙ</h2>
@@ -170,11 +155,50 @@
                 </div>
             </div>
 
-            <!-- Map -->
-            <div class="map" id="map">
-                <h2>DOVE SIAMO?</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2714850012467!2d9.04775241540847!3d45.524742079101706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786eb17b8a49edb%3A0x47895ef4a388fa73!2sMura%20Fusion%20Restaurant!5e0!3m2!1sen!2sit!4v1677529076493!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p>Corso Europa, 85, 20017 Rho MI</p>
+            <!-- Why us -->
+            <div class="why-us" id="why-us">
+                <h2>PERCHÉ MANGIARE DA NOI</h2>
+                <ul>
+                    <li>Parcheggio ampio interno gratuito</li>
+                    <li>Arredamento moderno e unico, adatto per famiglie, coppie e amici</li>
+                    <li>Zone privè per un'esperienza tranquilla e originale</li>
+                    <li>Ampia scelta di piatti, freschi e di qualità</li>
+                    <li>Il bagno, parcheggio, ingresso e i tavoli sono accessibili per chi è in sedia a rotelle</li>
+                </ul>
+            </div>
+
+            <!-- Gallery -->
+            <div class="slideshow-topcontainer">
+                <div class="slideshow-container">
+                    <div class="mySlides ">
+                        <img src="imgs/gallery/immagine1.jpg" style="width:100%">
+                     </div>
+                     <div class="mySlides ">  
+                        <img src="imgs/gallery/immagine2.png" style="width:100% ">
+                     </div>
+                     <div class="mySlides ">
+                        <img src="imgs/gallery/immagine3.jpg" style="width:100%">
+                     </div>
+                     <div class="mySlides ">
+                        <img src="imgs/gallery/immagine4.jpg" style="width:100%">
+                     </div>
+                     <div class="mySlides ">
+                        <img src="imgs/gallery/immagine5.jpg" style="width:100%">
+                     </div>
+                     <div class="mySlides">
+                        <img src="imgs/gallery/immagine6.jpg" style="width:100%">
+                     </div>
+                     <a class="prev" onclick="plusSlides(-1)">❮</a>
+                     <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                 </div>
             </div>
 
             <!-- Events -->
@@ -186,16 +210,30 @@
                 </p>
             </div>
 
-            <!-- Why us -->
-            <div class="why-us" id="why-us">
-                <h2>PERCHÉ MANGIARE DA NOI</h2>
-                <ul>
-                    <li>Parcheggio ampio interno gratuito</li>
-                    <li>Arredamento moderno e unico, adatto per famiglie, coppie e amici</li>
-                    <li>Zone privè per un'esperienza tranquilla e originale</li>
-                    <li>Ampia scelta di piatti, freschi e di qualità</li>
-                    <li>Il bagno, parcheggio, ingresso e i tavoli sono accessibili per chi è in sedia a rotelle</li>
-                </ul>
+            <!-- About us -->
+            <div class="about-us" id="about-us">
+                <h2>LA NOSTRA STORIA</h2>
+                <p>
+                    Il ristorante giapponese Mura si trova in una vecchia
+                    palazzina liberty, in uno spazio ricco di memoria 
+                    nel quale oriente ed occidente si fondono.
+                    Il locale dispone di tre sale, ognuna delle quali 
+                    rappresenta un elemento della natura.
+                    <br><br>
+                    Mura serve piatti orientali reinterpretati in chiave
+                    moderna da chef e maestri del sushi selezionati, 
+                    utilizzando materie prime di qualità.
+                    Tra i piatti del menù si trovano il Mura fruit,
+                    i Ravioli Shao Mai, il Sashimi Speciale e i Ramen.
+                </p>
+                <img src="imgs/about-us.png" alt="La nostra storia">
+            </div>
+
+            <!-- Map -->
+            <div class="map" id="map">
+                <h2>DOVE SIAMO?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2714850012467!2d9.04775241540847!3d45.524742079101706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786eb17b8a49edb%3A0x47895ef4a388fa73!2sMura%20Fusion%20Restaurant!5e0!3m2!1sen!2sit!4v1677529076493!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Corso Europa, 85, 20017 Rho MI</p>
             </div>
 
             <!-- Footer -->
@@ -217,11 +255,31 @@
                 document.getElementById('nav-icon').classList.toggle('change');
             }
 
-            function slideTo(location) {
-                let element = document.getElementById(location);
-                const y = element.getBoundingClientRect().top + window.pageYOffset -100;
-                window.scrollTo({top: y, behavior: 'smooth'});
-                toggleNav();
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
             }
         </script>
     </body>
