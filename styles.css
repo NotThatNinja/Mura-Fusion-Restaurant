@@ -12,6 +12,49 @@ body {
 img {max-width: 100%;}
 
 /* -- Nav -- */
+.desktop-nav {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+}
+#nav{
+background-color:#8F7600;
+list-style:none;
+margin:0;
+padding:0;
+text-align:center;
+}
+#nav li{
+display:inline;
+}
+#nav a{
+display:inline-block;
+padding:25px;
+}
+a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+cursor: pointer;
+}
+a:hover{
+color: black;
+}
+.container{
+background-color:black;
+padding: 25px;
+}
+.centro {
+display:block;
+margin:0px auto;
+text-align:center;
+}
+
+
+
+
 nav {
     width: 100vw;
     top: 0;
@@ -24,10 +67,10 @@ nav {
 
 .float{
 	position:fixed;
-	width:60px;
-	height:60px;
+	width:40px;
+	height:40px;
 	bottom:40px;
-	right:40px;
+	left:15px;
 	background-color: #8F7600;
 	border-radius:50px;
 	text-align:center;
@@ -279,7 +322,7 @@ footer p {
 
 .fa {
     color: black;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-decoration: none;
     margin: 0 0.5rem 1rem;
 }
@@ -304,10 +347,13 @@ footer p {
     color: white;
     text-align: left;
     padding: 0.5rem 1rem 1rem;
-    list-style-image: url('tick-icon.png');
-    padding-left: 3rem;
+    list-style-type: none;
 }
-.why-us ul li {font-weight: normal;}
+.why-us ul li {
+    font-weight: normal;
+    background: url('./tick-icon.png') no-repeat left center;
+    padding: 5px 10px 5px 45px;
+}
 
 /* Gallery */
 .slideshow-topcontainer {padding: 1.5rem 0.5rem 0.5rem; background: black;}
@@ -363,4 +409,29 @@ background-color: #8F7600;
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
 .prev, .next {font-size: 11px}
+}
+
+@media only screen and (min-width: 750px) {
+    body {
+        background-image: linear-gradient(120deg, #8F7600 50%, black 50%);
+        background-size: 100vw calc(100vh - 199.2px);
+        background-position: 0 calc(199.2px);
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+    nav {display: none;}
+
+    .hero-text {
+        position: absolute;
+        left: 15%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .hero-text div h1 {font-size: 5rem;}
+    .featured {
+        right: 0;
+        top: 50%;
+    }
 }
