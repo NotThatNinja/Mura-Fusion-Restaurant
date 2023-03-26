@@ -55,16 +55,16 @@
         </nav>
 
         <!-- Desktop nav -->
-        <div class="desktop-nav">
+        <div class="desktop-nav" id="desktop-nav">
             <div class="container">
                 <a href="#"> <img src="imgs/logo.png" class="centro" height="80px" witdh="80px" alt="" /></a>
              </div>
              <ul id="nav">
-                <li><a onclick="slideTo('home')">HOME</a></li>
-                <li><a onclick="slideTo('dishes-menu')">MENÙ</a></li>
-                <li><a onclick="slideTo('info')">INFORMAZIONI</a></li>
-                <li><a onclick="slideTo('events')">EVENTI</a></li>
-                <li><a onclick="slideTo('contacts')">CONTATTI</a></li>
+                <li><a class="desktop-nav-a" onclick="slideTo('home')">HOME</a></li>
+                <li><a class="desktop-nav-a" onclick="slideTo('dishes-menu')">MENÙ</a></li>
+                <li><a class="desktop-nav-a" onclick="slideTo('info')">INFORMAZIONI</a></li>
+                <li><a class="desktop-nav-a" onclick="slideTo('events')">EVENTI</a></li>
+                <li><a class="desktop-nav-a" onclick="slideTo('contacts')">CONTATTI</a></li>
              </ul>
         </div>
 
@@ -165,13 +165,13 @@
                 </div>
                 <div class="info-div">
                     <img class="info-icon" src="imgs/clock-icon.png" alt="Icona di un orologio">
-                    <p class="broken-info-p">
+                    <p class="broken-info-p1">
                         Siamo aperti tutti i giorni, pranzo e cena
                     </p>
                 </div>
-                <div class="info-div">
+                <div class="info-div" style="margin-bottom: 2.5rem;">
                     <img class="info-icon info-icon-broken" src="imgs/delivery-icon.png" alt="Icona di un camion delle consegne">
-                    <p>
+                    <p class="broken-info-p2">
                         Facciamo consegne a domicilio <br>
                         (minimo ordine 40€).  Per consegne oltre i 9 km<br>
                         vengono aggiunti 5 € di corriere
@@ -192,7 +192,7 @@
             </div>
 
             <!-- Gallery -->
-            <h2 style="text-align: center; color: white; background-color: black; padding: 1rem;" class="gallery-h2">Galleria</h2>
+            <h2 style="text-align: center; color: white; background-color: black; padding: 1rem;" class="gallery-h2">GALLERIA</h2>
             <div class="slideshow-topcontainer">
                 <div class="slideshow-container">
                     <div class="mySlides ">
@@ -237,7 +237,7 @@
 
             <!-- About us -->
             <div class="about-us" id="about-us">
-                <h2>LA NOSTRA STORIA</h2>
+                <h2 style="margin-bottom: 2rem;">LA NOSTRA STORIA</h2>
                 <p>
                     Il ristorante giapponese Mura si trova in una vecchia
                     palazzina liberty, in uno spazio ricco di memoria 
@@ -275,6 +275,22 @@
             </footer>
         
         <script>
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    let items = document.getElementsByClassName('desktop-nav-a');
+                    for (i = 0; i < items.length; i++) {
+                        items[i].style.fontSize = '1rem';
+                    }
+                } else {
+                    let items = document.getElementsByClassName('desktop-nav-a');
+                    for (i = 0; i < items.length; i++) {
+                        items[i].style.fontSize = '1.25rem';
+                    }
+                }
+            }
+
             function toggleNav() {
                 let navlinks = document.getElementById('nav-links-mobile');
                 navlinks.style.display = navlinks.style.display == 'block' ? 'none' : 'block';
