@@ -80,6 +80,8 @@ nav {
     z-index:100;
 }
 
+.desktop-hero-img {display: none;}
+
 .my-float{
 	margin-top:16px;
 }
@@ -466,4 +468,6 @@ background-color: #8F7600;
     footer img {max-height: 100px;}
 
     .map iframe {width: 600px; height: 400px;}
+
+    .desktop-hero-img {display: block; width: 350px; position: absolute; right: 0; top: 20%;}
 }
