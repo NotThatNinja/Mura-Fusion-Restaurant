@@ -27,7 +27,7 @@
     </head>
     <body>
         <a href="https://wa.me/393667443406" class="float" target="_blank">
-            <i style="font-size: 40px; margin-left: 3px;" class="fa fa-whatsapp my-float"></i>
+            <i style="font-size: 40px; margin-left: 3px; color: black;" class="fa fa-whatsapp my-float"></i>
         </a>
 
         <!-- Nav -->
@@ -57,7 +57,7 @@
         <!-- Desktop nav -->
         <div class="desktop-nav" id="desktop-nav">
             <div class="container">
-                <a href="#"> <img src="imgs/logo.png" class="centro" height="80px" witdh="80px" alt="" /></a>
+                <a href="#"> <img src="imgs/logo.png" class="centro" height="60px" witdh="60px" alt="" /></a>
              </div>
              <ul id="nav">
                 <li><a class="desktop-nav-a" onclick="slideTo('home')">HOME</a></li>
@@ -192,8 +192,8 @@
             </div>
 
             <!-- Gallery -->
-            <h2 style="text-align: center; color: white; background-color: black; padding: 1rem;" class="gallery-h2">GALLERIA</h2>
-            <div class="slideshow-topcontainer">
+            <div class="slideshow-topcontainer" style="margin-top: 3rem;">
+                <h2 style="text-align: center; color: white; background-color: black; margin: 0; margin-top: -1.5rem; padding: 1rem;" class="gallery-h2">GALLERIA</h2>
                 <div class="slideshow-container">
                     <div class="mySlides ">
                         <img src="imgs/gallery/immagine1.jpg" style="width:100%">
@@ -216,7 +216,7 @@
                      <a class="prev" onclick="plusSlides(-1)">❮</a>
                      <a class="next" onclick="plusSlides(1)">❯</a>
                 </div>
-                <div style="text-align:center">
+                <div style="text-align:center; margin-bottom: 1rem;">
                     <span class="dot" onclick="currentSlide(1)"></span> 
                     <span class="dot" onclick="currentSlide(2)"></span> 
                     <span class="dot" onclick="currentSlide(3)"></span> 
@@ -229,10 +229,13 @@
             <!-- Events -->
             <div class="events" id="events">
                 <h2>EVENTI</h2>
-                <p>
-                    Non ci sono eventi in programma al momento<br>
-                    Torna a visitarci presto!
-                </p>
+                <div class="events-grid">
+                    <img src="imgs/esclamazione.png" alt="Punto esclamativo">
+                    <p>
+                        Non ci sono eventi in programma al momento<br>
+                        Torna a visitarci presto!
+                    </p>
+                </div>
             </div>
 
             <!-- About us -->
@@ -256,10 +259,19 @@
 
             <!-- Map -->
             <div class="map" id="map">
-                <h2>DOVE SIAMO?</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2714850012467!2d9.04775241540847!3d45.524742079101706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786eb17b8a49edb%3A0x47895ef4a388fa73!2sMura%20Fusion%20Restaurant!5e0!3m2!1sen!2sit!4v1677529076493!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <br>
-                <p>Corso Europa, 85, 20017 Rho MI</p>
+                <h2>CONTATTI</h2>
+                <div class="contacts-grid">
+                    <address>
+                        <strong>Email:</strong> murafusionrestaurant@gmail.com<br>
+                        <strong>Telefono:</strong> <a href="tel:366 7443406">366 7443406</a> o <a href="tel:02 930 3103">02 930 3103</a><br>
+                        <strong>Indirizzo:</strong> Corso Europa, 85, 20017 Rho MI
+                        <div class="socialbar">
+                            <a href="https://www.facebook.com/MuraFusionRestaurant/" rel="noopener" class="fa fa-facebook-square"></a>
+                            <a href="https://www.instagram.com/murafusionrestaurant/" rel="noopener" class="fa fa-instagram"></a>
+                        </div>
+                    </address>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2714850012467!2d9.04775241540847!3d45.524742079101706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786eb17b8a49edb%3A0x47895ef4a388fa73!2sMura%20Fusion%20Restaurant!5e0!3m2!1sen!2sit!4v1677529076493!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                </div>
             </div>
 
             <!-- Footer -->
@@ -267,30 +279,10 @@
                 <div class="footer-logo">
                     <img src="imgs/logo.png" alt="Logo">
                 </div>
-                <p>Tutti i diritti sono riservati, per maggiori informazioni consulta la Privacy Policy e le note legali.<br>p. iva 07392740960</p>
-                <div class="socialbar">
-                    <a href="https://www.facebook.com/MuraFusionRestaurant/" rel="noopener" class="fa fa-facebook-square"></a>
-                    <a href="https://www.instagram.com/murafusionrestaurant/" rel="noopener" class="fa fa-instagram"></a>
-                </div>
+                <p>Tutti i diritti sono riservati | Privacy Policy | Note Legali<br>p. iva 07392740960</p>
             </footer>
         
         <script>
-            window.onscroll = function() {scrollFunction()};
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                    let items = document.getElementsByClassName('desktop-nav-a');
-                    for (i = 0; i < items.length; i++) {
-                        items[i].style.fontSize = '1rem';
-                    }
-                } else {
-                    let items = document.getElementsByClassName('desktop-nav-a');
-                    for (i = 0; i < items.length; i++) {
-                        items[i].style.fontSize = '1.25rem';
-                    }
-                }
-            }
-
             function toggleNav() {
                 let navlinks = document.getElementById('nav-links-mobile');
                 navlinks.style.display = navlinks.style.display == 'block' ? 'none' : 'block';

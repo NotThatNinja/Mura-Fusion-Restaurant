@@ -12,6 +12,15 @@ body {
 
 img {max-width: 100%;}
 
+address {
+    font-style: normal;
+    font: 1.1rem Montserrat;
+    color: white;
+    margin: 0.5rem;
+    line-height: 2;
+}
+address a {font-weight: normal; font-size: 1.1rem;}
+
 /* -- Nav -- */
 .desktop-nav {
     display: none;
@@ -73,7 +82,7 @@ nav {
 	height:40px;
 	bottom:40px;
 	left:15px;
-	background-color: #8F7600;
+	background-color: white;
 	border-radius:50px;
 	text-align:center;
     padding: 0.5rem;
@@ -213,6 +222,7 @@ nav {
     margin-bottom: -2rem;
 }
 .about-us h2, .about-us p {color: white;}
+.about-us h2 {margin: 0;}
 .about-us h2 {
     background-color: black;
     padding: 1rem;
@@ -283,6 +293,7 @@ nav {
     color: white;
     background-color: black;
     padding: 1rem;
+    margin: 0;
 }
 .map iframe {
     width: 90%;
@@ -290,7 +301,6 @@ nav {
 }
 .map p {
     color: white;
-    background-color: black;
     padding: 1rem;
     display: inline-block;
     border-radius: 5rem;
@@ -299,23 +309,38 @@ nav {
 }
 
 /* -- Events -- */
+.events-grid {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding-left: 3rem;
+}
+.events-grid img {
+    width: 60px;
+}
 .events h2 {
-    background-color: black;
     color: white;
     text-align: center;
     padding: 1rem;
+    margin: 0;
+    padding-bottom: 0;
 }
 .events p {
     padding: 0 1rem;
     color: white;
     font-weight: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* -- Footer -- */
 .footer-logo {
     background-color: black;
     padding: 1rem 5rem;
+    text-align: center;
+}
+.footer-logo img {
+    width: 175px;
 }
 
 footer p {
@@ -325,13 +350,15 @@ footer p {
 }
 
 .fa {
-    color: black;
-    font-size: 3rem;
+    color: white;
+    font-size: 2.25rem;
     text-decoration: none;
-    margin: 0 0.5rem 1rem;
+    margin: 0 0.5rem;
 }
 
 .socialbar {
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
     text-align: center;
 }
 
@@ -350,7 +377,7 @@ footer p {
     background-color: black;
     color: white;
     text-align: left;
-    padding: 0.5rem 1rem 1rem;
+    padding: 1rem 1rem 1rem;
     list-style-type: none;
 }
 .why-us ul li {
@@ -415,11 +442,26 @@ background-color: #8F7600;
 .prev, .next {font-size: 11px}
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (max-width: 1375px) and (min-height: 800px) {
+    .hero-text div h1 {font-size: 5rem;}
+    .featured {bottom: 4%;}
+    .hero-image-1 {width: 250px;}
+    .hero-image-2 {width: 250px;}
+    .events-grid {padding: 0 7rem;}
+    .map iframe {margin-bottom: 2rem;}
+    body {background-size: 100vw calc(100vh - 55.913px - 2rem);}
+}
+
+
+@media only screen and (min-width: 1375px) {
+    .events-grid {margin: auto; margin-bottom: 1rem;}
+    .events-grid p {text-align: left !important; padding-left: 0;}
+    .events-grid img {width: 90px; margin-right: 0;}
+
     body {
         background-image: linear-gradient(120deg, black 50%, #8F7600 50%);
-        background-size: 100vw calc(100vh - 199.2px);
-        background-position: 0 calc(199.2px);
+        background-size: 100vw calc(100vh - 184px);
+        background-position: 0 calc(184px);
     }
 
     .desktop-nav {
@@ -452,37 +494,42 @@ background-color: #8F7600;
 
     .dishes-menu h2 {padding: 2rem;}
     .dishes-menu-grid {display: grid; grid-template-columns: 1fr 1fr; max-width: 1200px; margin: auto;}
-    .dishes-menu img {max-width: 1000px;}
-    .dishes-menu-link {font-size: 1.5rem; padding: 0.5rem 1rem; margin: 0.5rem;}
-    .dishes-menu-link a {font-size: 1.5rem;}
+    .dishes-menu img {max-width: 900px;}
+    .dishes-menu-link {font-size: 1.25rem; padding: 0.5rem 1rem; margin: 0.5rem;}
+    .dishes-menu-link a {font-size: 1.25rem; padding: 0.5rem;}
 
-    .info {max-width: 800px; margin: auto;}
+    .info {max-width: 750px; margin: auto;}
     .info h2 {padding: 1rem;}
     .info-div {border-radius: 5rem;}
     .info-div p {font-size: 1.5rem; margin: 0;}
     .info-icon {margin-top: 2rem; margin-left: -2rem; width: 90px;}
 
     .why-us {background-color: black;}
-    .why-us h2 {padding-top: 2rem; padding-bottom: 0;}
+    .why-us h2 {padding-top: 2rem; padding-bottom: 0; margin-bottom: 1rem;}
     .why-us ul {max-width: 600px; margin: auto;}
-    .why-us ul li {font-size: 1.5rem; padding-left: 80px;}
+    .why-us ul li {font-size: 1.5rem; padding-left: 80px; margin-bottom: 0.5rem;}
 
     .events h2 {padding: 1.5rem;}
-    .events p {max-width: 500px; text-align: center; margin: auto; padding: 1rem; background-color: black; font-size: 1.5rem;}
+    .events p {max-width: 500px; text-align: center; margin: auto; padding: 1rem; font-size: 1.5rem;}
 
     .gallery-h2 {padding: 1.5rem !important;}
 
-    .about-us p {max-width: 1000px; font-size: 1.6rem; margin: auto;}
-    .about-us img {max-width: 800px;}
-    .about-us h2 {padding: 1.5rem;}
+    .about-us {background-color: black;}
+    .about-us p {max-width: 1000px; font-size: 1.5rem; margin: auto;}
+    .about-us img {max-width: 700px; margin-top: -1rem; margin-bottom: -2rem;}
+    .about-us h2 {padding: 1.5rem; padding-bottom: 0;}
 
     footer {width: 100vw; text-align: center; box-sizing: border-box;}
     footer img {max-height: 100px;}
     footer p {font-size: 1.5rem;}
 
-    .map iframe {width: 600px; height: 400px;}
-    .map h2 {padding: 1.5rem;}
+    .map iframe {width: 500px; height: 333px;}
+    .map h2 {padding: 1.5rem; background-color: #8F7600; margin-bottom: 2.25rem;}
+    .socialbar {text-align: left !important;}
     .map p {font-size: 1.5rem; padding: 1.5rem;}
+    .contacts-grid {display: grid; grid-template-columns: auto auto; align-items: center; padding: 0 15rem; text-align: left; margin-bottom: 3rem;}
+    address {font-size: 1.5rem;}
+    address a {font-size: 1.5rem;}
 
     .desktop-hero-img {display: block; width: 350px; position: absolute; right: 0; top: 20%;}
 
@@ -491,3 +538,20 @@ background-color: #8F7600;
     .broken-info-p1 {margin-left: -50px !important;}
     .broken-info-p2 {margin-left: 30px !important;}
 }
+
+@media only screen and (min-width: 1650px) {
+    .hero-text div h1 {
+        font-size: 8.5rem;
+    }
+
+    .featured {
+        left: 25%;
+    }
+
+    .desktop-hero-img {width: 450px;}
+}
+
+.featured-item:hover {background-color: #8F7600; color: white; border: 2px solid white;}
+.dishes-menu-link a:hover {background-color: black; color: white;}
+.info-icon:hover {filter: invert(100%);}
+.why-us ul li:hover {filter: hue-rotate(100deg);}
