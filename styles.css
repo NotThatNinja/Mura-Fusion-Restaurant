@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(56.7167px + 2rem);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -278,6 +283,7 @@ nav {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    margin-bottom: 2.5rem;
 }
 .info-div p {color: white; font-weight: normal; margin-left: 1rem;}
 
@@ -298,6 +304,7 @@ nav {
 .map iframe {
     width: 90%;
     height: 250px;
+    border: 0;
 }
 .map p {
     color: white;
@@ -387,7 +394,7 @@ footer p {
 }
 
 /* Gallery */
-.slideshow-topcontainer {padding: 1.5rem 0.5rem 0.5rem; background: black;}
+.slideshow-topcontainer {padding: 1.5rem 0.5rem 0.5rem; background: black; margin-top: 3rem;}
 .slideshow-container, .mySlides {box-sizing: border-box; margin-bottom: 0.5rem;}
 .mySlides {display: none}
 .mySlides img {vertical-align: middle; border-radius: 10%; object-fit: cover; height: 60vw; max-height: 450px;}
@@ -454,6 +461,10 @@ background-color: #8F7600;
 
 
 @media only screen and (min-width: 1375px) {
+    html {
+        scroll-padding-top: 174px;
+    }
+
     .events-grid {margin: auto; margin-bottom: 1rem;}
     .events-grid p {text-align: left !important; padding-left: 0;}
     .events-grid img {width: 90px; margin-right: 0;}
@@ -555,3 +566,11 @@ background-color: #8F7600;
 .dishes-menu-link a:hover {background-color: black; color: white;}
 .info-icon:hover {filter: invert(100%);}
 .why-us ul li:hover {filter: hue-rotate(100deg);}
+
+/* --- Legacy inlines --- */
+.whatsapp-button {font-size: 40px; margin-left: 3px; color: black;}
+.margin-left-auto {margin-left: auto;}
+.gallery-h2 {text-align: center; color: white; background-color: black; margin: 0; margin-top: -1.5rem; padding: 1rem;}
+.width-100 {width: 100%;}
+.slideshow-dots {text-align:center; margin-bottom: 1rem;}
+.about-us-h2 {margin-bottom: 2rem;}

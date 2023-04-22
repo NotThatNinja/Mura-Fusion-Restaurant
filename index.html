@@ -8,7 +8,7 @@
         <meta name="keywords" content="ristorante , sushi , giapponese , all you can eat , pranzo , cena , economico , accessibile , parcheggio " >
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,b">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="canonical" href="https://murafusionrestaurant.it/" >
         <meta name="robots" content="index" >
         <meta name="robots" content="follow" >
@@ -27,88 +27,90 @@
         <meta property="twitter:url" content="https://murafusionrestaurant.it/" />
         <meta name="twitter:title" content="Mura Fusion Restaurant - Sushi All You Can Eat a Rho" />
         <meta name="twitter:description" content="Sito ufficiale del ristorante Mura Fusion Restaurant. Qui troverete la nostra storia, il menù aggiornato , i contatti e tanto altro." />
-        <meta name="twitter:image" content="https://murafusionrestaurant/og-foto.png" />
-     </head>
+        <meta name="twitter:image" content="https://murafusionrestaurant/og-foto.png" />
+     </head>
     <body>
-        <a href="https://wa.me/393667443406" class="float" target="_blank" aria-label="Contattaci su Whatsapp">
-            <i style="font-size: 40px; margin-left: 3px; color: black;" class="fa fa-whatsapp my-float"></i>
-        </a>
+        <header>
+            <!-- Nav -->
+            <nav>
+                <a href="index.html">
+                    <img class="logo" src="imgs/logo.png" alt="Logo di Mura Fusion Restaurant">
+                </a>
+                
+                <div class="nav-icon" onclick="toggleNav()" id="nav-icon">
+                    <div class="nav-icon-bar1"></div>
+                    <div class="nav-icon-bar2"></div>
+                    <div class="nav-icon-bar3"></div>
+                </div>
 
-        <!-- Nav -->
-        <nav>
-            <a href="index.html">
-                <img class="logo" src="imgs/logo.png" alt="Logo">
+                <!-- Nav links -->
+                <div class="nav-links" id="nav-links-mobile">
+                    <ul>
+                        <li><a onclick="toggleNav()" href="#home" class="desktop-nav-a">HOME</a></li>
+                        <li><a onclick="toggleNav()" href="#dishes-menu" class="desktop-nav-a">MENÙ</a></li>
+                        <li><a onclick="toggleNav()" href="#info" class="desktop-nav-a">INFORMAZIONI</a></li>
+                        <li><a onclick="toggleNav()" href="#events" class="desktop-nav-a">EVENTI</a></li>
+                        <li><a onclick="toggleNav()" href="#contacts" class="desktop-nav-a">CONTATTI</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <a href="https://wa.me/393667443406" class="float" target="_blank" aria-label="Contattaci su Whatsapp">
+                <i class="fa fa-whatsapp my-float whatsapp-button"></i>
             </a>
-            
-            <div class="nav-icon" onclick="toggleNav()" id="nav-icon">
-                <div class="nav-icon-bar1"></div>
-                <div class="nav-icon-bar2"></div>
-                <div class="nav-icon-bar3"></div>
-            </div>
 
-            <!-- Nav links -->
-            <div class="nav-links" id="nav-links-mobile">
-                <ul>
-                    <li><a onclick="slideTo('home')">Home</a></li>
-                    <li><a onclick="slideTo('dishes-menu')">Menù</a></li>
-                    <li><a onclick="slideTo('info')">Informazioni</a></li>
-                    <li><a onclick="slideTo('events')">Eventi</a></li>
-                    <li><a onclick="slideTo('contacts')">Contatti</a></li>
+            <!-- Desktop nav -->
+            <div class="desktop-nav" id="desktop-nav">
+                <div class="container">
+                    <a href="#"> <img src="imgs/logo.png" class="centro" height="60px" alt="Logo di Mura Fusion Restaurant" /></a>
+                </div>
+                <ul id="nav">
+                    <li><a href="#home" class="desktop-nav-a">HOME</a></li>
+                    <li><a href="#dishes-menu" class="desktop-nav-a">MENÙ</a></li>
+                    <li><a href="#info" class="desktop-nav-a">INFORMAZIONI</a></li>
+                    <li><a href="#events" class="desktop-nav-a">EVENTI</a></li>
+                    <li><a href="#contacts" class="desktop-nav-a">CONTATTI</a></li>
                 </ul>
             </div>
-        </nav>
 
-        <!-- Desktop nav -->
-        <div class="desktop-nav" id="desktop-nav">
-            <div class="container">
-                <a href="#"> <img src="imgs/logo.png" class="centro" height="60px" alt="Logo" /></a>
-             </div>
-             <ul id="nav">
-                <li><a href="javascript:void(0)" class="desktop-nav-a" onclick="slideTo('home')">HOME</a></li>
-                <li><a href="javascript:void(0)" class="desktop-nav-a" onclick="slideTo('dishes-menu')">MENÙ</a></li>
-                <li><a href="javascript:void(0)" class="desktop-nav-a" onclick="slideTo('info')">INFORMAZIONI</a></li>
-                <li><a href="javascript:void(0)" class="desktop-nav-a" onclick="slideTo('events')">EVENTI</a></li>
-                <li><a href="javascript:void(0)" class="desktop-nav-a" onclick="slideTo('contacts')">CONTATTI</a></li>
-             </ul>
-        </div>
+            <!-- Hero -->
+            <img class="hero-image-1" src="imgs/sushi-1.png" alt="Bacchetta con del Sushi">
+            <img class="hero-image-2" src="imgs/sushi-2.png" alt="Sushi">
+            <img class="desktop-hero-img" src="imgs/desktop-hero-img.png" alt="Bacchetta con del Sushi">
+            
+            <div class="hero-text" id="home">
+                <div class="hero-text">
+                    <h1>
+                        <i>A</i>LL<br>
+                        <i>Y</i>OU<br>
+                        <i>C</i>AN<br>
+                        <i>E</i>AT<br>
+                    </h1>
+                </div>
+            </div>
 
-        <!-- Hero -->
-        <img class="hero-image-1" src="imgs/sushi-1.png" alt="Sushi">
-        <img class="hero-image-2" src="imgs/sushi-2.png" alt="Sushi">
-        <img class="desktop-hero-img" src="imgs/desktop-hero-img.png" alt="Sushi">
-        
-        <div class="hero-text" id="home">
-            <div class="hero-text">
-                <h1>
-                    <i>A</i>LL<br>
-                    <i>Y</i>OU<br>
-                    <i>C</i>AN<br>
-                    <i>E</i>AT<br>
-                </h1>
+            <!-- Featured -->
+            <main class="featured">
+                <div class="featured-item">
+                    <p>
+                        PRANZO 14,90€<br>
+                        MARTEDÌ AL VENERDÌ A PERSONA
+                    </p>
+                </div>
+                <div class="featured-item">
+                    <p>
+                        PRANZO 20,90€<br>
+                        SABATO, DOMENICA E FESTIVI
+                    </p>
+                </div>
+                <div class="featured-item">
+                    <p>
+                        CENA 28,00€<br>
+                        MARTEDÌ AL VENERDÌ A PERSONA
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <!-- Featured -->
-        <div class="featured">
-            <div class="featured-item">
-                <p>
-                    PRANZO 14,90€<br>
-                    MARTEDÌ AL VENERDÌ A PERSONA
-                </p>
-            </div>
-            <div class="featured-item">
-                <p>
-                    PRANZO 20,90€<br>
-                    SABATO, DOMENICA E FESTIVI
-                </p>
-            </div>
-            <div class="featured-item">
-                <p>
-                    CENA 28,00€<br>
-                    MARTEDÌ AL VENERDÌ A PERSONA
-                </p>
-            </div>
-        </div>
+        </header>
 
         <!-- Content -->
         <div class="content">
@@ -118,37 +120,37 @@
                 <div class="dishes-menu-grid">
                     <div class="dishes-menu-link">
                         <p>MENÙ PRANZO</p>
-                        <div style="margin-left: auto;">
+                        <div class="margin-left-auto">
                             <a href="files/menu-pranzo.pdf">Clicca qui</a>
                         </div>
                     </div>
                     <div class="dishes-menu-link">
                         <p>MENÙ CENA</p>
-                        <div style="margin-left: auto;">
+                        <div class="margin-left-auto">
                             <a href="files/menu-cena.pdf">Clicca qui</a>
                         </div>
                     </div>
                     <div class="dishes-menu-link">
                         <p>MENÙ TAKEAWAY</p>
-                        <div style="margin-left: auto;">
+                        <div class="margin-left-auto">
                             <a href="files/menu-takeaway.pdf">Clicca qui</a>
                         </div>
                     </div>
                     <div class="dishes-menu-link">
                         <p>MENÙ SUSHI<br>DINNER BOX</p>
-                        <div style="margin-left: auto;">
+                        <div class="margin-left-auto">
                             <a href="files/menu-dinnerbox.pdf">Clicca qui</a>
                         </div>
                     </div>
                     <div class="dishes-menu-link">
                         <p>MENÙ NOVITÀ</p>
-                        <div style="margin-left: auto;">
+                        <div class="margin-left-auto">
                             <a href="files/menu-nuovi.pdf">Clicca qui</a>
                         </div>
                     </div>
                     <div class="dishes-menu-link">
                         <p>MENÙ BEVANDE<br>E VINI</p>
-                        <div style="margin-left: auto;">
+                        <div class="margin-left-auto">
                             <a href="files/menu-vini.pdf">Clicca qui</a>
                         </div>
                     </div>
@@ -173,7 +175,7 @@
                         Siamo aperti tutti i giorni, pranzo e cena
                     </p>
                 </div>
-                <div class="info-div" style="margin-bottom: 2.5rem;">
+                <div class="info-div">
                     <img class="info-icon info-icon-broken" src="imgs/delivery-icon.png" alt="Icona di un camion delle consegne">
                     <p class="broken-info-p2">
                         Facciamo consegne a domicilio <br>
@@ -196,31 +198,31 @@
             </div>
 
             <!-- Gallery -->
-            <div class="slideshow-topcontainer" style="margin-top: 3rem;">
-                <h2 style="text-align: center; color: white; background-color: black; margin: 0; margin-top: -1.5rem; padding: 1rem;" class="gallery-h2">GALLERIA</h2>
+            <div class="slideshow-topcontainer">
+                <h2 class="gallery-h2">GALLERIA</h2>
                 <div class="slideshow-container">
                     <div class="mySlides ">
-                        <img src="imgs/gallery/immagine1.webp" style="width:100%" alt="Interno del ristorante">
+                        <img src="imgs/gallery/immagine1.webp" class="width-100" alt="Interno del ristorante">
                      </div>
                      <div class="mySlides ">  
-                        <img src="imgs/gallery/immagine2.webp" style="width:100%" alt="Piatto di sushi salmone">
+                        <img src="imgs/gallery/immagine2.webp" class="width-100" alt="Piatto di sushi salmone">
                      </div>
                      <div class="mySlides ">
-                        <img src="imgs/gallery/immagine3.webp" style="width:100%" alt="Piatto di sushi roll">
+                        <img src="imgs/gallery/immagine3.webp" class="width-100" alt="Piatto di sushi roll">
                      </div>
                      <div class="mySlides ">
-                        <img src="imgs/gallery/immagine4.webp" style="width:100%" alt="Interno del ristorante">
+                        <img src="imgs/gallery/immagine4.webp" class="width-100" alt="Interno del ristorante">
                      </div>
                      <div class="mySlides ">
-                        <img src="imgs/gallery/immagine5.webp" style="width:100%" alt="Un tavolo del ristorante">
+                        <img src="imgs/gallery/immagine5.webp" class="width-100" alt="Un tavolo del ristorante">
                      </div>
                      <div class="mySlides">
-                        <img src="imgs/gallery/immagine6.webp" style="width:100%" alt="Un tavolo del ristorante">
+                        <img src="imgs/gallery/immagine6.webp" class="width-100" alt="Un tavolo del ristorante">
                      </div>
                      <a href="javascript:void(0)" class="prev" onclick="plusSlides(-1)">❮</a>
                      <a href="javascript:void(0)" class="next" onclick="plusSlides(1)">❯</a>
                 </div>
-                <div style="text-align:center; margin-bottom: 1rem;">
+                <div class="slideshow-dots">
                     <span class="dot" onclick="currentSlide(1)"></span> 
                     <span class="dot" onclick="currentSlide(2)"></span> 
                     <span class="dot" onclick="currentSlide(3)"></span> 
@@ -244,7 +246,7 @@
 
             <!-- About us -->
             <div class="about-us" id="about-us">
-                <h2 style="margin-bottom: 2rem;">LA NOSTRA STORIA</h2>
+                <h2 class="about-us-h2">LA NOSTRA STORIA</h2>
                 <p>
                     Il ristorante giapponese Mura si trova in una vecchia
                     palazzina liberty, in uno spazio ricco di memoria 
@@ -262,7 +264,7 @@
             </div>
 
             <!-- Map -->
-            <div class="map" id="map">
+            <div class="map" id="contacts">
                 <h2>CONTATTI</h2>
                 <div class="contacts-grid">
                     <address>
@@ -274,14 +276,14 @@
                             <a href="https://www.instagram.com/murafusionrestaurant/" rel="noopener" aria-label="La nostra pagina Instagram" class="fa fa-instagram"></a>
                         </div>
                     </address>
-                    <iframe title="Posizione del ristorante" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2714850012467!2d9.04775241540847!3d45.524742079101706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786eb17b8a49edb%3A0x47895ef4a388fa73!2sMura%20Fusion%20Restaurant!5e0!3m2!1sen!2sit!4v1677529076493!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                    <iframe title="Posizione del ristorante" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2714850012467!2d9.04775241540847!3d45.524742079101706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786eb17b8a49edb%3A0x47895ef4a388fa73!2sMura%20Fusion%20Restaurant!5e0!3m2!1sen!2sit!4v1677529076493!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
                 </div>
             </div>
 
             <!-- Footer -->
-            <footer id="contacts">
+            <footer>
                 <div class="footer-logo">
-                    <img src="imgs/logo.png" alt="Logo">
+                    <img src="imgs/logo.png" alt="Logo di Mura Fusion Restaurant">
                 </div>
                 <p>Tutti i diritti sono riservati | Privacy Policy | Note Legali<br>p. iva 07392740960</p>
             </footer>
@@ -291,16 +293,6 @@
                 let navlinks = document.getElementById('nav-links-mobile');
                 navlinks.style.display = navlinks.style.display == 'block' ? 'none' : 'block';
                 document.getElementById('nav-icon').classList.toggle('change');
-            }
-
-            function slideTo(location) {
-                let element = document.getElementById(location);
-                let y = element.getBoundingClientRect().top + window.pageYOffset -100;
-                if (location == 'home') {
-                    y = 0;
-                }
-                window.scrollTo({top: y, behavior: 'smooth'});
-                toggleNav();
             }
 
             let slideIndex = 1;
