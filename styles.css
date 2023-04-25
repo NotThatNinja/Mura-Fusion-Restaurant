@@ -132,7 +132,7 @@ nav {
 .nav-links ul li a {
     color: #8F7600;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 
 .nav-icon-bar1, .nav-icon-bar2, .nav-icon-bar3 {
@@ -553,6 +553,8 @@ background-color: #8F7600;
 
     .broken-info-p1 {margin-left: -50px !important;}
     .broken-info-p2 {margin-left: 30px !important;}
+
+    .about-us-p {margin-top: 0.5rem !important; font-size: 1.35rem !important;}
 }
 
 @media only screen and (min-width: 1650px) {
