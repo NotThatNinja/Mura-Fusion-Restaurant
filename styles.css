@@ -132,7 +132,7 @@ nav {
 .nav-links ul li a {
     color: #8F7600;
     text-decoration: none;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
 }
 
 .nav-icon-bar1, .nav-icon-bar2, .nav-icon-bar3 {
@@ -267,6 +267,7 @@ nav {
     border-radius: 1rem;
     padding: 0.3rem;
     font-weight: normal;
+    font-size: 1rem;
 }
 
 /* -- Info -- */
